@@ -1,2 +1,2 @@
-# Aplication
+# Application
 App
