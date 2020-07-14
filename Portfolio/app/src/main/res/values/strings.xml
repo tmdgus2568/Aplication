@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Portfolio</string>
+    <string name="id">id</string>
+    <string name="password">password</string>
 </resources>
