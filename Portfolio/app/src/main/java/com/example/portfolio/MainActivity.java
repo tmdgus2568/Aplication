@@ -34,15 +34,19 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button:
                 Intent intent = new Intent(this, Calculator.class);
                 startActivity(intent);
+                break;
             case R.id.button2:
                 Intent intent2 = new Intent(this, ChangeImage.class);
                 startActivity(intent2);
+                break;
             case R.id.button3:
                 Intent intent3 = new Intent(this, ChangeImage2.class);
                 startActivity(intent3);
+                break;
             case R.id.button4:
                 Intent intent4 = new Intent(this, Timer.class);
                 startActivity(intent4);
+                break;
         }
     }
 

@@ -49,7 +49,7 @@ public class Timer extends AppCompatActivity {
     }
     Handler mHandler = new Handler(){
         public void handleMessage(Message msg){
-            txt.setText(msg.arg1);
+            txt.setText(""+msg.arg1);
 
         }
     };
