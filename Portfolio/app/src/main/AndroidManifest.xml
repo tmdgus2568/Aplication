@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MyCalendar"></activity>
         <activity android:name=".Timer" />
         <activity android:name=".ChangeImage2" />
         <activity android:name=".ChangeImage" />
