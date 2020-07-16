@@ -113,6 +113,7 @@ public class MyCalendar extends AppCompatActivity {
         SimpleDateFormat dayFormat = new SimpleDateFormat("dd", Locale.getDefault());
         SimpleDateFormat monthFormat = new SimpleDateFormat("MM", Locale.getDefault());
         SimpleDateFormat yearFormat = new SimpleDateFormat("yyyy", Locale.getDefault());
+
         TextView[] Cal = {null, txt1, txt2, txt3, txt4, txt5, txt6, txt7,
                 txt8, txt9, txt10, txt11, txt12, txt13, txt14, txt15,
                 txt16, txt17, txt18, txt19, txt20, txt21, txt22, txt23,
@@ -130,11 +131,60 @@ public class MyCalendar extends AppCompatActivity {
 //        month_current = "6";
 //        day_current = "16";
 
+        setDays();
+
+        prev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if((Integer.parseInt(month_current) - 1) == 0){
+                    month_current = "12";
+                    year_current = Integer.toString(Integer.parseInt(year_current) - 1);
+                }
+                else month_current = Integer.toString(Integer.parseInt(month_current) - 1);
+
+
+                for(int i=1;i<=7;i++){
+                    if((Cal[i].getText()).equals("1")){
+                        int k = i - 1;
+                            if (k == 0) k = 7;
+                        day_current = Integer.toString(month_day[Integer.parseInt(month_current)]);
+                        if(k == 1) weekday_current = "일";
+                        else if(k==2) weekday_current = "월";
+                        else if(k==3) weekday_current = "화";
+                        else if(k==4) weekday_current = "수";
+                        else if(k==5) weekday_current = "목";
+                        else if(k==6) weekday_current = "금";
+                        else weekday_current = "일";
+                        System.out.println(year_current);
+                        System.out.println(month_current);
+                        System.out.println(day_current);
+                        System.out.println(weekday_current);
+
+                        setDays();
+
+                        System.out.println(year_current);
+                        System.out.println(month_current);
+                        System.out.println(day_current);
+                        System.out.println(weekday_current);
+                        break;
+                    }
+
+                }
+            }
+        });
+
+    }
+
+    public void setDays(){
+        TextView[] Cal = {null, txt1, txt2, txt3, txt4, txt5, txt6, txt7,
+                txt8, txt9, txt10, txt11, txt12, txt13, txt14, txt15,
+                txt16, txt17, txt18, txt19, txt20, txt21, txt22, txt23,
+                txt24, txt25, txt26, txt27, txt28, txt29, txt30, txt31, txt32, txt33, txt34, txt35};
+        int[] month_day = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         year_txt.setText(year_current);
         month_txt.setText(month_current);
         int d = Integer.parseInt(day_current) % 7;
         int k ;
-
         switch (weekday_current){
             case "Sun" :
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
@@ -186,8 +236,7 @@ public class MyCalendar extends AppCompatActivity {
                     else Cal[7-d+i].setText(Integer.toString(i));
                 }
                 break;
-       }
-
+        }
     }
 
 
