@@ -195,7 +195,7 @@ public class MyCalendar extends AppCompatActivity {
                 for(int i=28;i<=42;i++){
 
                     if((Cal[i].getText()).equals(Integer.toString(month_day[this_month]))){
-                        System.out.println(i);
+//                        System.out.println(i);
                         int k = i + 1;
                         k = k%7;
                         day_current = Integer.toString(1);
@@ -206,9 +206,9 @@ public class MyCalendar extends AppCompatActivity {
                         else if(k==5) weekday_current = "Thu";
                         else if(k==6) weekday_current = "Fri";
                         else weekday_current = "Sat";
-                        System.out.println(month_current);
-                        System.out.println(day_current);
-                        System.out.println(weekday_current);
+//                        System.out.println(month_current);
+//                        System.out.println(day_current);
+//                        System.out.println(weekday_current);
 
                         setDays();
 
@@ -243,6 +243,8 @@ public class MyCalendar extends AppCompatActivity {
                 k = 1-d+1;
                 if(k < 0) k = k+7;
                 else if (k > 7) k = k-7;
+                else if (k == 0) k = 7;
+                System.out.println(k);
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
                     Cal[k-1+i].setText(Integer.toString(i));
                 }
@@ -251,6 +253,8 @@ public class MyCalendar extends AppCompatActivity {
                 k = 2-d+1;
                 if(k < 0) k = k+7;
                 else if (k > 7) k = k-7;
+                else if (k == 0) k = 7;
+                System.out.println(k);
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
                     Cal[k-1+i].setText(Integer.toString(i));
                 }
@@ -259,6 +263,8 @@ public class MyCalendar extends AppCompatActivity {
                 k = 3-d+1;
                 if(k < 0) k = k+7;
                 else if (k > 7) k = k-7;
+                else if (k == 0) k = 7;
+                System.out.println(k);
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
                     Cal[k-1+i].setText(Integer.toString(i));
                 }
@@ -267,6 +273,8 @@ public class MyCalendar extends AppCompatActivity {
                 k = 4-d+1;
                 if(k < 0) k = k+7;
                 else if (k > 7) k = k-7;
+                else if (k == 0) k = 7;
+                System.out.println(k);
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
                     Cal[k-1+i].setText(Integer.toString(i));
                 }
@@ -275,6 +283,8 @@ public class MyCalendar extends AppCompatActivity {
                 k = 5-d+1;
                 if(k < 0) k = k+7;
                 else if (k > 7) k = k-7;
+                else if (k == 0) k = 7;
+                System.out.println(k);
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
                     Cal[k-1+i].setText(Integer.toString(i));
                 }
@@ -283,6 +293,8 @@ public class MyCalendar extends AppCompatActivity {
                 k = 6-d+1;
                 if(k < 0) k = k+7;
                 else if (k > 7) k = k-7;
+                else if (k == 0) k = 7;
+                System.out.println(k);
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
                     Cal[k-1+i].setText(Integer.toString(i));
                 }
@@ -291,6 +303,8 @@ public class MyCalendar extends AppCompatActivity {
                 k = 7-d+1;
                 if(k < 0) k = k+7;
                 else if (k > 7) k = k-7;
+                else if (k == 0) k = 7;
+                System.out.println(k);
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
                     Cal[k-1+i].setText(Integer.toString(i));
                 }
