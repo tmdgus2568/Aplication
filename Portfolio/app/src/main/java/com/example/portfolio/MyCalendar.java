@@ -97,6 +97,21 @@ public class MyCalendar extends AppCompatActivity {
     TextView txt34;
     @BindView(R.id.textView54)
     TextView txt35;
+    @BindView(R.id.textView9)
+    TextView txt36;
+    @BindView(R.id.textView10)
+    TextView txt37;
+    @BindView(R.id.textView12)
+    TextView txt38;
+    @BindView(R.id.textView13)
+    TextView txt39;
+    @BindView(R.id.textView55)
+    TextView txt40;
+    @BindView(R.id.textView56)
+    TextView txt41;
+    @BindView(R.id.textView57)
+    TextView txt42;
+
 
     @BindView(R.id.imageView10)
     ImageView prev;
@@ -117,19 +132,20 @@ public class MyCalendar extends AppCompatActivity {
         TextView[] Cal = {null, txt1, txt2, txt3, txt4, txt5, txt6, txt7,
                 txt8, txt9, txt10, txt11, txt12, txt13, txt14, txt15,
                 txt16, txt17, txt18, txt19, txt20, txt21, txt22, txt23,
-                txt24, txt25, txt26, txt27, txt28, txt29, txt30, txt31, txt32, txt33, txt34, txt35};
+                txt24, txt25, txt26, txt27, txt28, txt29, txt30, txt31,
+                txt32, txt33, txt34, txt35, txt36, txt37, txt38, txt39, txt40, txt41, txt42};
         int[] month_day = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
 
-        weekday_current = weekdayFormat.format(currentTime);
-        year_current = yearFormat.format(currentTime);
-        month_current = monthFormat.format(currentTime);
-        day_current = dayFormat.format(currentTime);
-
-//        weekday_current = "Tue";
+//        weekday_current = weekdayFormat.format(currentTime);
 //        year_current = yearFormat.format(currentTime);
-//        month_current = "6";
-//        day_current = "16";
+//        month_current = monthFormat.format(currentTime);
+//        day_current = dayFormat.format(currentTime);
+
+        weekday_current = "Sun";
+        year_current = yearFormat.format(currentTime);
+        month_current = "5";
+        day_current = "31";
 
         setDays();
 
@@ -146,26 +162,57 @@ public class MyCalendar extends AppCompatActivity {
                 for(int i=1;i<=7;i++){
                     if((Cal[i].getText()).equals("1")){
                         int k = i - 1;
-                            if (k == 0) k = 7;
+                        if (k == 0) k = 7;
                         day_current = Integer.toString(month_day[Integer.parseInt(month_current)]);
-                        if(k == 1) weekday_current = "일";
-                        else if(k==2) weekday_current = "월";
-                        else if(k==3) weekday_current = "화";
-                        else if(k==4) weekday_current = "수";
-                        else if(k==5) weekday_current = "목";
-                        else if(k==6) weekday_current = "금";
-                        else weekday_current = "일";
-                        System.out.println(year_current);
+                        if(k == 1) weekday_current = "Sun";
+                        else if(k==2) weekday_current = "Mon";
+                        else if(k==3) weekday_current = "Tue";
+                        else if(k==4) weekday_current = "Wed";
+                        else if(k==5) weekday_current = "Thu";
+                        else if(k==6) weekday_current = "Fri";
+                        else weekday_current = "Sat";
+
+
+                        setDays();
+
+
+                        break;
+                    }
+
+                }
+            }
+        });
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int this_month = Integer.parseInt(month_current);
+                if((Integer.parseInt(month_current) + 1) == 13){
+                    month_current = "1";
+                    year_current = Integer.toString(Integer.parseInt(year_current) + 1);
+                }
+                else month_current = Integer.toString(Integer.parseInt(month_current) + 1);
+                for(int i=28;i<=42;i++){
+
+                    if((Cal[i].getText()).equals(Integer.toString(month_day[this_month]))){
+                        System.out.println(i);
+                        int k = i + 1;
+                        k = k%7;
+                        day_current = Integer.toString(1);
+                        if(k == 1) weekday_current = "Sun";
+                        else if(k==2) weekday_current = "Mon";
+                        else if(k==3) weekday_current = "Tue";
+                        else if(k==4) weekday_current = "Wed";
+                        else if(k==5) weekday_current = "Thu";
+                        else if(k==6) weekday_current = "Fri";
+                        else weekday_current = "Sat";
                         System.out.println(month_current);
                         System.out.println(day_current);
                         System.out.println(weekday_current);
 
                         setDays();
 
-                        System.out.println(year_current);
-                        System.out.println(month_current);
-                        System.out.println(day_current);
-                        System.out.println(weekday_current);
+
                         break;
                     }
 
@@ -179,64 +226,77 @@ public class MyCalendar extends AppCompatActivity {
         TextView[] Cal = {null, txt1, txt2, txt3, txt4, txt5, txt6, txt7,
                 txt8, txt9, txt10, txt11, txt12, txt13, txt14, txt15,
                 txt16, txt17, txt18, txt19, txt20, txt21, txt22, txt23,
-                txt24, txt25, txt26, txt27, txt28, txt29, txt30, txt31, txt32, txt33, txt34, txt35};
+                txt24, txt25, txt26, txt27, txt28, txt29, txt30, txt31,
+                txt32, txt33, txt34, txt35, txt36, txt37, txt38, txt39, txt40, txt41, txt42};
         int[] month_day = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         year_txt.setText(year_current);
         month_txt.setText(month_current);
         int d = Integer.parseInt(day_current) % 7;
         int k ;
+
+        for(int i=1;i<=42;i++)
+            Cal[i].setText("");
+
+
         switch (weekday_current){
             case "Sun" :
+                k = 1-d+1;
+                if(k < 0) k = k+7;
+                else if (k > 7) k = k-7;
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
-                    k = 1-d+i;
-                    if(k < 0) k = k + 7;
-                    else Cal[1-d+i].setText(Integer.toString(i));
+                    Cal[k-1+i].setText(Integer.toString(i));
                 }
                 break;
             case "Mon" :
+                k = 2-d+1;
+                if(k < 0) k = k+7;
+                else if (k > 7) k = k-7;
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
-                    k = 2-d+i;
-                    if(k < 0) k = k + 7;
-                    else Cal[2-d+i].setText(Integer.toString(i));
+                    Cal[k-1+i].setText(Integer.toString(i));
                 }
                 break;
             case "Tue" :
+                k = 3-d+1;
+                if(k < 0) k = k+7;
+                else if (k > 7) k = k-7;
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
-                    k = 3-d+i;
-                    if(k < 0) k = k + 7;
-                    else Cal[3-d+i].setText(Integer.toString(i));
+                    Cal[k-1+i].setText(Integer.toString(i));
                 }
                 break;
             case "Wed" :
+                k = 4-d+1;
+                if(k < 0) k = k+7;
+                else if (k > 7) k = k-7;
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
-                    k = 4-d+i;
-                    if(k < 0) k = k + 7;
-                    else Cal[4-d+i].setText(Integer.toString(i));
+                    Cal[k-1+i].setText(Integer.toString(i));
                 }
                 break;
             case "Thu" :
+                k = 5-d+1;
+                if(k < 0) k = k+7;
+                else if (k > 7) k = k-7;
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
-                    k = 5-d+i;
-                    if(k < 0) k = k + 7;
-                    else Cal[5-d+i].setText(Integer.toString(i));
+                    Cal[k-1+i].setText(Integer.toString(i));
                 }
                 break;
             case "Fri" :
+                k = 6-d+1;
+                if(k < 0) k = k+7;
+                else if (k > 7) k = k-7;
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
-                    k = 6-d+i;
-                    if(k < 0) k = k + 7;
-                    else Cal[6-d+i].setText(Integer.toString(i));
-
+                    Cal[k-1+i].setText(Integer.toString(i));
                 }
                 break;
             case "Sat" :
+                k = 7-d+1;
+                if(k < 0) k = k+7;
+                else if (k > 7) k = k-7;
                 for(int i=1; i<=month_day[Integer.parseInt(month_current)]; i++){
-                    k = 7-d+i;
-                    if(k < 0) k = k + 7;
-                    else Cal[7-d+i].setText(Integer.toString(i));
+                    Cal[k-1+i].setText(Integer.toString(i));
                 }
                 break;
         }
+
     }
 
 

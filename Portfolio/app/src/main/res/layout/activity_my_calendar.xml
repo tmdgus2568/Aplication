@@ -521,5 +521,74 @@
                 android:background="#FFFFFF"
                 android:gravity="center" />
         </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.3dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.3dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.3dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.3dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.3dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.3dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.3dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center" />
+        </TableRow>
     </TableLayout>
 </LinearLayout>
