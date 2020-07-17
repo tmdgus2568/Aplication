@@ -51,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent5 = new Intent(this, MyCalendar.class);
                 startActivity(intent5);
                 break;
+            case R.id.button6:
+                Intent intent6 = new Intent(this, RatingStar.class);
+                startActivity(intent6);
+                break;
         }
     }
 
