@@ -55,6 +55,22 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent6 = new Intent(this, RatingStar.class);
                 startActivity(intent6);
                 break;
+            case R.id.button7:
+                Intent intent7 = new Intent(this, LifeCycle.class);
+                startActivity(intent7);
+                break;
+            case R.id.button8:
+                Intent intent8 = new Intent(this, MyListView.class);
+                startActivity(intent8);
+                break;
+            case R.id.button9:
+                Intent intent9 = new Intent(this, CustomListView.class);
+                startActivity(intent9);
+                break;
+            case R.id.button10:
+                Intent intent10 = new Intent(this, PhoneBook.class);
+                startActivity(intent10);
+                break;
         }
     }
 

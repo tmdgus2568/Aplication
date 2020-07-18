@@ -80,7 +80,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:onClick="onClickbtn"
+            android:text="생명주기확인"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/button8"
@@ -88,7 +90,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:onClick="onClickbtn"
+            android:text="리스트" />
     </TableRow>
 
     <TableRow
@@ -101,7 +104,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:onClick="onClickbtn"
+            android:text="커스텀리스트"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/button10"
@@ -109,23 +114,22 @@
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:onClick="onClickbtn"
+            android:text="전화번호부" />
 
         <Button
             android:id="@+id/button11"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button12"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
     </TableRow>
 
     <TableRow
@@ -137,32 +141,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button14"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button15"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button16"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
     </TableRow>
 
     <TableRow
@@ -174,32 +174,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button18"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button19"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button20"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
     </TableRow>
 
     <TableRow
@@ -211,32 +207,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button22"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button23"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button24"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
     </TableRow>
 
     <TableRow
@@ -248,32 +240,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button26"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button27"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button28"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
     </TableRow>
 
     <TableRow
@@ -285,32 +273,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button30"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button31"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button32"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
     </TableRow>
 
     <TableRow
@@ -322,32 +306,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button34"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button35"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button36"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
     </TableRow>
 
     <TableRow
@@ -359,32 +339,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button38"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button39"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button40"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
     </TableRow>
 
     <TableRow
@@ -396,32 +372,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button42"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button43"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button44"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
     </TableRow>
 
     <TableRow
@@ -433,31 +405,27 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button46"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button47"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
 
         <Button
             android:id="@+id/button48"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:layout_weight="1" />
     </TableRow>
 </TableLayout>

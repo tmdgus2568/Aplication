@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RatingStar"></activity>
+        <activity android:name=".PhoneBook"></activity>
+        <activity android:name=".CustomListView" />
+        <activity android:name=".MyListView" />
+        <activity android:name=".LifeCycle" />
+        <activity android:name=".RatingStar" />
         <activity android:name=".MyCalendar" />
         <activity android:name=".Timer" />
         <activity android:name=".ChangeImage2" />

@@ -58,7 +58,7 @@
             android:layout_weight="8"
             android:background="@null"
             android:ems="10"
-            android:hint="@string/id"
+            android:hint="id"
             android:inputType="textPersonName" />
     </LinearLayout>
 
@@ -92,7 +92,7 @@
             android:layout_weight="8"
             android:background="@null"
             android:ems="10"
-            android:hint="@string/password"
+            android:hint="password"
             android:inputType="textPassword" />
 
     </LinearLayout>
