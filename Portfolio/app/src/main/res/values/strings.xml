@@ -41,11 +41,11 @@
         <item>Motorolla Nexus x</item>
     </string-array>
     <string-array name="phone_name">
-        <item>유재석</item>
-        <item>강호동</item>
-        <item>이수근</item>
-        <item>서장훈</item>
-        <item>김장훈</item>
+        <item>ice cream</item>
+        <item>phone</item>
+        <item>kakao</item>
+        <item>glass</item>
+        <item>party</item>
     </string-array>
     <string-array name="phone_number">
         <item>010-1234-4365</item>
