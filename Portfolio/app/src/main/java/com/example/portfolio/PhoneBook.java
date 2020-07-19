@@ -23,6 +23,7 @@ public class PhoneBook extends AppCompatActivity {
     int listSize = 0;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,27 +72,6 @@ public class PhoneBook extends AppCompatActivity {
                 PhoneBookAdapter filter_adapter = (PhoneBookAdapter) itemListView.getAdapter();
                 filter_adapter.notifyDataSetChanged();
                 itemListView.setAdapter(filter_adapter);
-
-//                // 검색기능을 위한 새로운 ArrayList 생성
-//               ArrayList<Item_phone> filter_list = new ArrayList<>();
-//                String itemNames[] = getResources().getStringArray(R.array.phone_name);
-//                String itemNumber[] = getResources().getStringArray(R.array.phone_number);
-//
-//                // EditText에 입력된 값이 포함되어 있다면 filter_list에 값 추가
-//                for(int i=0;i<itemNames.length;i++){
-//                    if(itemNames[i].indexOf(s.toString()) != -1){
-//                        filter_list.add(new Item_phone(itemNames[i],itemNumber[i]));
-//                    }
-//                    else if (itemNumber[i].indexOf(s.toString()) != -1){
-//                        filter_list.add(new Item_phone(itemNames[i],itemNumber[i]));
-//                    }
-//                }
-//
-//                // filter_list를 위한 새로운 adapter 생성 및 연결
-//                PhoneBookAdapter filter_adapter = (PhoneBookAdapter) itemListView.getAdapter();
-//                filter_adapter.notifyDataSetChanged();
-//                itemListView.setAdapter(filter_adapter);
-
 
 
             }
