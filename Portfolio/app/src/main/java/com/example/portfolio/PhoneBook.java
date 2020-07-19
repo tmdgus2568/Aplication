@@ -28,6 +28,8 @@ public class PhoneBook extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phone_book);
         ButterKnife.bind(this);
+        String itemNames[] = getResources().getStringArray(R.array.phone_name);
+        String itemNumber[] = getResources().getStringArray(R.array.phone_number);
         ArrayList<Item_phone> list = generateItemList();
         ArrayList<Item_phone> list_save = generateItemList();
         PhoneBookAdapter adapter = new PhoneBookAdapter(this, list);
@@ -56,8 +58,6 @@ public class PhoneBook extends AppCompatActivity {
                 }
 
                 list.clear();
-                String itemNames[] = getResources().getStringArray(R.array.phone_name);
-                String itemNumber[] = getResources().getStringArray(R.array.phone_number);
 
                 for(int i=0;i<listSize;i++){
                     if(itemNames[i].indexOf(s.toString()) != -1){
