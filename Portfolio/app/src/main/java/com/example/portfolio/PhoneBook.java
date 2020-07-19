@@ -71,9 +71,7 @@ public class PhoneBook extends AppCompatActivity {
 
                 PhoneBookAdapter filter_adapter = (PhoneBookAdapter) itemListView.getAdapter();
                 filter_adapter.notifyDataSetChanged();
-                itemListView.setAdapter(filter_adapter);
-
-
+                
             }
         });
 
