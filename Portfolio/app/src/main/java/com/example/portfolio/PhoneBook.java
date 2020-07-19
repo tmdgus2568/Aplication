@@ -54,7 +54,7 @@ public class PhoneBook extends AppCompatActivity {
                 if((s.toString()).isEmpty()) {
                     list.clear();
                     list.addAll(list_save);
-                    itemListView.setAdapter(adapter);
+                    adapter.notifyDataSetChanged();
                     return ;
                 }
 
@@ -69,9 +69,8 @@ public class PhoneBook extends AppCompatActivity {
                     }
                 }
 
-                PhoneBookAdapter filter_adapter = (PhoneBookAdapter) itemListView.getAdapter();
-                filter_adapter.notifyDataSetChanged();
-                
+                adapter.notifyDataSetChanged();
+
             }
         });
 
