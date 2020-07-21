@@ -30,6 +30,8 @@ public class EditDialog {
         btn_cancel = (Button) dialog.findViewById(R.id.edit_cancel);
         edit_new_name = (EditText) dialog.findViewById(R.id.new_name);
         edit_new_number = (EditText) dialog.findViewById(R.id.new_number);
+        edit_new_name.setText(i.getItemName());
+        edit_new_number.setText(i.getItemNumber());
 
 
         btn_OK.setOnClickListener(new View.OnClickListener() {

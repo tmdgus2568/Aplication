@@ -31,11 +31,9 @@ import static android.widget.Toast.LENGTH_LONG;
 
 public class PhoneBook extends AppCompatActivity {
     @BindView(R.id.phone_list) ListView itemListView;
-    @BindView(R.id.total)
-    TextView totalText;
+    static TextView totalText;
     @BindView(R.id.filter)
     EditText filterEdit;
-//    static int listSize = 0;
     Context context = this;
     static ArrayList<Item_phone> list;
     static ArrayList<Item_phone> list_save;
@@ -54,6 +52,7 @@ public class PhoneBook extends AppCompatActivity {
         list_save = generateItemList();
         adapter = new PhoneBookAdapter(this, list);
         itemListView.setAdapter(adapter);
+        totalText = findViewById(R.id.total);
         totalText.setText("총 "+list.size()+"개의 연락처");
 
         filterEdit.addTextChangedListener(new TextWatcher() {
@@ -75,6 +74,7 @@ public class PhoneBook extends AppCompatActivity {
                     list.clear();
                     list.addAll(list_save);
                     adapter.notifyDataSetChanged();
+                    totalText.setText("총 "+list.size()+"개의 연락처");
                     return ;
                 }
 
@@ -91,6 +91,7 @@ public class PhoneBook extends AppCompatActivity {
                 }
 
                 adapter.notifyDataSetChanged();
+                totalText.setText("총 "+list.size()+"개의 연락처");
 
             }
         });
@@ -120,6 +121,8 @@ public class PhoneBook extends AppCompatActivity {
                                         deleteDialog.showDialog((Item_phone)adapter.getItem(position));
                                         break;
                                     case R.id.insertPhoneItem:
+                                        InsertDialog insertDialog = new InsertDialog(context);
+                                        insertDialog.showDialog();
                                         break;
 
                                 }
@@ -153,7 +156,15 @@ public class PhoneBook extends AppCompatActivity {
         list.remove(i);
         list_save.clear();
         list_save.addAll(list);
-    };
+    }
+
+    static public void addListItem(Item_phone i){
+        list.add(i);
+        list_save.add(i);
+    }
+    static public void totalSetText(){
+        totalText.setText("총 "+list.size()+"개의 연락처");
+    }
     static public PhoneBookAdapter getAdapter(){ return adapter; }
 
 

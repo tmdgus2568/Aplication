@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/editTitle"
+        android:id="@+id/insertTitle"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="수정"
+        android:text="추가"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -36,8 +36,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="이름"
+            android:inputType="textPersonName" />
 
     </LinearLayout>
 
@@ -60,8 +60,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="번호"
+            android:inputType="textPersonName" />
 
     </LinearLayout>
 
@@ -72,14 +72,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/edit_OK"
+            android:id="@+id/insert_OK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="확인" />
 
         <Button
-            android:id="@+id/edit_cancel"
+            android:id="@+id/insert_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

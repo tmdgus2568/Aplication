@@ -33,6 +33,7 @@ public class DeleteDialog {
 
                 PhoneBook.removeListItem(i);
                 PhoneBook.getAdapter().notifyDataSetChanged();
+                PhoneBook.totalSetText();
 
                 dialog.dismiss();
             }
