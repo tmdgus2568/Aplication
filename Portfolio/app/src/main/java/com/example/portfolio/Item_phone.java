@@ -11,6 +11,9 @@ public class Item_phone {
         return this.phone_name;
     }
     public String getItemNumber() {
-        return phone_number;
+        return this.phone_number;
     }
+    public void setItemName(String name){ this.phone_name = name; }
+    public void setItemNumber(String number) { this.phone_number = number; }
+
 }

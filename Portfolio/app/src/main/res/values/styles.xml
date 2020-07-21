@@ -10,4 +10,39 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <!-- The text appearance of the title -->
+    <attr name="bottom_sheet_menu_title_text_appearance" format="reference" />
+
+    <!-- The number of columns to show when using the grid style -->
+    <attr name="bottom_sheet_menu_column_count" format="integer" />
+
+    <!-- The selector to be used for the items in the list/grid -->
+    <attr name="bottom_sheet_menu_selector" format="reference" />
+
+    <!-- The text appearance of the list items -->
+    <attr name="bottom_sheet_menu_list_text_appearance" format="reference" />
+
+    <!-- The text appearance of the grid items -->
+    <attr name="bottom_sheet_menu_grid_text_appearance" format="reference" />
+
+    <style name="MyBottomSheetMenuStyle" parent="@style/Theme.BottomSheetMenuDialog">
+        <item name="bottom_sheet_menu_title_text_appearance">@style/TitleAppearance</item>
+        <item name="bottom_sheet_menu_list_text_appearance">@style/ListAppearance</item>
+        <item name="bottom_sheet_menu_grid_text_appearance">@style/GridAppearance</item>
+    </style>
+
+    <style name="TitleAppearance" parent="BottomSheetMenu.Title.TextAppearance">
+        <item name="android:textColor">@android:color/holo_green_light</item>
+    </style>
+
+    <style name="ListAppearance" parent="BottomSheetMenu.ListItem.TextAppearance">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="GridAppearance" parent="BottomSheetMenu.GridItem.TextAppearance">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>

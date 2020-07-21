@@ -12,15 +12,17 @@ import java.util.ArrayList;
 public class PhoneBookAdapter extends BaseAdapter {
     private Context context;
     private ArrayList<Item_phone> items;
+//    private int count;
 
     public PhoneBookAdapter(Context context, ArrayList<Item_phone> items){
         this.context = context;
         this.items = items;
+//        this.count = items.size();
     }
 
     @Override
     public int getCount() {
-        return items.size();
+        return items.size() ;
     }
 
     @Override
@@ -46,6 +48,7 @@ public class PhoneBookAdapter extends BaseAdapter {
 
         textViewItemName.setText(currentItem.getItemName());
         textViewItemNumber.setText(currentItem.getItemNumber());
+
 
         return convertView;
     }
