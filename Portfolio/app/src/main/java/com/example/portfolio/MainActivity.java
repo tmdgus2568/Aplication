@@ -71,6 +71,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent10 = new Intent(this, PhoneBook.class);
                 startActivity(intent10);
                 break;
+            case R.id.button11:
+                Intent intent11 = new Intent(this, BottomNavigation.class);
+                startActivity(intent11);
+                break;
         }
     }
 

@@ -49,11 +49,5 @@ public class EditDialog {
                 dialog.dismiss();
             }
         });
-
-
-
-
-
-
     }
 }
